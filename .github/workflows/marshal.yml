@@ -1,0 +1,30 @@
+name: Marshal
+on:
+  pull_request:
+    paths:
+      - '**/build.gradle'
+      - '**/build.gradle.kts'
+  push:
+    branches: [main]
+
+jobs:
+  marshal:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Marshal scan
+        uses: marshal-hq/marshal/marshal-action@main
+        with:
+          path: .
+          marshal-version: 0.2.0-rc.3
+          threshold: orange
+          fail-on: fail
+          comment-on-pr: 'true'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
