@@ -18,10 +18,10 @@ repositories {
 }
 
 dependencies {
-        implementation("org.springframework.boot:spring-boot-starter-web")
-        implementation("javax.activation:activation:1.1-rev-1")
-        testImplementation("org.springframework.boot:spring-boot-starter-test")
-        testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+	implementation("org.springframework.boot:spring-boot-starter-web")
+	implementation("com.example.marshal.nonexistent:does-not-exist:9.9.9") // resolves nowhere
+	testImplementation("org.springframework.boot:spring-boot-starter-test")
+	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
 
 tasks.withType<Test> {
