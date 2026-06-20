@@ -17,6 +17,7 @@ repositories {
 	mavenCentral()
 }
 
+// No-op edit for the no-change acceptance case: touches the build file, changes no dependency.
 dependencies {
         implementation("org.springframework.boot:spring-boot-starter-web")
         implementation("javax.activation:activation:1.1-rev-1")
