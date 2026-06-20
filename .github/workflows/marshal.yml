@@ -23,7 +23,7 @@ jobs:
         with:
           path: .
           marshal-version: 0.2.0-rc.3
-          threshold: orange
+          threshold: bogus
           fail-on: fail
           comment-on-pr: 'true'
         env:
