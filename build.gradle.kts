@@ -27,3 +27,5 @@ dependencies {
 tasks.withType<Test> {
 	useJUnitPlatform()
 }
+
+// marshal rewrite test: force clean re-run
