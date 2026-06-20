@@ -19,7 +19,7 @@ repositories {
 
 dependencies {
         implementation("org.springframework.boot:spring-boot-starter-web")
-        implementation("javax.activation:activation:1.1.1")
+        implementation("javax.activation:activation:1.1-rev-1")
         testImplementation("org.springframework.boot:spring-boot-starter-test")
         testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
