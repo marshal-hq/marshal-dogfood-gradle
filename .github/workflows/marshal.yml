@@ -15,8 +15,6 @@ jobs:
       pull-requests: write
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: Marshal scan
         uses: marshal-hq/marshal/marshal-action@main

@@ -17,6 +17,7 @@ repositories {
 	mavenCentral()
 }
 
+// trigger touch for shallow-checkout test
 dependencies {
         implementation("org.springframework.boot:spring-boot-starter-web")
         implementation("javax.activation:activation:1.1-rev-1")
